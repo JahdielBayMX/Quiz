@@ -1,0 +1,165 @@
+{
+  "id": "diagnostico-parte-3",
+  "slug": "diagnostico-parte-3",
+  "title": "Diagnóstico Parte 3",
+  "subtitle": "Repasa las enseñanzas principales de la predicación sobre sanidad, gracia, gozo y esperanza.",
+  "buttons": {
+    "hint": "💡 Ver pista",
+    "next": "Siguiente Pregunta →",
+    "review": "Revisar respuestas",
+    "retry": "Intentar de nuevo",
+    "revive": "Revive el mensaje",
+    "retryReview": "Volver a intentar"
+  },
+  "results": {
+    "title": "¡Lo lograste!",
+    "subtitle": "Completaste el cuestionario satisfactoriamente.",
+    "correctLabel": "Aciertos",
+    "wrongLabel": "Errores",
+    "reviewTitle": "Revisión Detallada"
+  },
+  "videoUrl": "https://www.youtube.com/watch?v=86x8yecoLOA",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Según la predicación, ¿qué significa permanecer en Cristo?",
+      "options": [
+        "Mantener una relación continua de dependencia de Jesús",
+        "Acudir a Dios solamente cuando aparece una necesidad",
+        "Buscar una solución espiritual para dejar de necesitar a Dios",
+        "Esperar que todos los problemas desaparezcan antes de seguir adelante"
+      ],
+      "correctIndex": 0,
+      "hint": "Recuerda la comparación que Jesús hizo entre la vid y las ramas.",
+      "explanation": "La predicación presentó la vida con Dios no como una visita ocasional para recibir una solución, sino como una relación permanente. Permanecer en Cristo significa depender de Él continuamente y recibir de Él la fuerza para vivir.",
+      "bible_ref": "Juan 15:5"
+    },
+    {
+      "id": 2,
+      "question": "En el relato de la mujer que sufría una hemorragia, ¿qué ocurrió cuando tocó el manto de Jesús?",
+      "options": [
+        "Jesús le indicó que regresara después de haber completado un tratamiento",
+        "La multitud reconoció inmediatamente quién había tocado a Jesús",
+        "La hemorragia se detuvo y ella fue sanada",
+        "Jesús le pidió que buscara primero a los médicos que la habían atendido"
+      ],
+      "correctIndex": 2,
+      "hint": "Piensa en lo que la mujer sintió en su cuerpo inmediatamente después de acercarse a Jesús.",
+      "explanation": "Este episodio fue presentado como un ejemplo de milagro de sanidad. Después de muchos años de sufrimiento y de haber gastado sus recursos sin mejorar, la mujer experimentó una sanidad al acercarse a Jesús con fe.",
+      "bible_ref": "Marcos 5:25-34"
+    },
+    {
+      "id": 3,
+      "question": "Según la predicación, ¿qué error debemos evitar cuando una persona sigue padeciendo después de haber orado por sanidad?",
+      "options": [
+        "Pensar que todo diagnóstico médico debe ignorarse",
+        "Concluir que necesariamente le falta fe",
+        "Dejar de reconocer que Dios puede sanar",
+        "Aceptar que algunas situaciones permanecen sin explicación"
+      ],
+      "correctIndex": 1,
+      "hint": "Recuerda lo que se dijo acerca de creyentes que se sienten condenados porque su sanidad no llega.",
+      "explanation": "La predicación rechazó la idea de que la ausencia de un milagro demuestre automáticamente una falta de fe. Se enfatizó que la sanidad no depende de encontrar una oración perfecta ni de hacer algo que obligue a Dios a sanar.",
+      "bible_ref": "Marcos 5:34"
+    },
+    {
+      "id": 4,
+      "question": "¿Cómo explicó la predicación la relación entre un diagnóstico y la identidad de una persona?",
+      "options": [
+        "El diagnóstico debe negarse para proteger la fe",
+        "El diagnóstico determina los límites que una persona tendrá en la vida",
+        "El diagnóstico demuestra necesariamente la condición espiritual de una persona",
+        "El diagnóstico puede ser una realidad sin convertirse en lo que define a la persona"
+      ],
+      "correctIndex": 3,
+      "hint": "Recuerda la frase sobre reconocer lo que dice el documento médico sin permitir que eso defina o limite la vida.",
+      "explanation": "El mensaje no propuso negar los diagnósticos. Enseñó a reconocer la realidad de una condición sin convertirla en una etiqueta que determine quiénes somos, qué podemos hacer o cuál será nuestro propósito.",
+      "bible_ref": "Filipenses 4:11-13"
+    },
+    {
+      "id": 5,
+      "question": "¿Qué aprendemos del ejemplo de Pablo y su \"aguijón en la carne\" según la predicación?",
+      "options": [
+        "Una persona puede vivir sostenida por la gracia de Dios aun cuando una dificultad permanezca",
+        "Toda enfermedad desaparecerá si se ora suficientes veces",
+        "Los padecimientos siempre son enviados directamente por Dios",
+        "La fe consiste en no reconocer nunca una debilidad"
+      ],
+      "correctIndex": 0,
+      "hint": "Recuerda qué respondió el Señor cuando Pablo pidió tres veces que aquel aguijón fuera quitado.",
+      "explanation": "Pablo pidió que el aguijón fuera retirado, pero recibió la respuesta: \"Mi gracia es todo lo que necesitas\". La predicación destacó que la vida sostenida por la gracia de Dios no depende de alcanzar una vida sin ninguna debilidad.",
+      "bible_ref": "2 Corintios 12:7-10"
+    },
+    {
+      "id": 6,
+      "question": "Una persona tiene un diagnóstico que permanece y comienza a pensar que ya no podrá cumplir el propósito de Dios. Según la predicación, ¿qué debería recordar?",
+      "options": [
+        "Que debe esperar a ser completamente sana antes de servir",
+        "Que el diagnóstico debe ser ignorado para poder avanzar",
+        "Que una condición puede permanecer sin convertirse en una etiqueta o una excusa",
+        "Que una dificultad persistente demuestra que Dios dejó de acompañarla"
+      ],
+      "correctIndex": 2,
+      "hint": "Piensa en Pablo, sus padecimientos y la manera en que continuó cumpliendo el propósito de Dios.",
+      "explanation": "El mensaje mostró que Pablo tuvo padecimientos que no desaparecieron, pero estos no se convirtieron en una etiqueta ni le impidieron cumplir el propósito de Dios. La salud divina fue presentada como una vida sostenida por la gracia y capacitada para seguir adelante.",
+      "bible_ref": "2 Corintios 12:9-10"
+    },
+    {
+      "id": 7,
+      "question": "¿Cómo se relacionan la alegría en el Señor y las circunstancias difíciles en la enseñanza de Filipenses presentada en la predicación?",
+      "options": [
+        "La alegría depende de que las circunstancias finalmente mejoren",
+        "La alegría significa fingir que el sufrimiento no existe",
+        "La alegría consiste en entender completamente por qué Dios permite cada situación",
+        "La alegría puede permanecer porque está puesta en el Señor, aun cuando algunas circunstancias no cambien"
+      ],
+      "correctIndex": 3,
+      "hint": "Recuerda desde dónde escribió Pablo y qué invitación repitió a los filipenses.",
+      "explanation": "Pablo escribió desde una situación de sufrimiento y aun así llamó a los creyentes a alegrarse en el Señor. La predicación distinguió entre alegrarse por el padecimiento y encontrar el gozo en Cristo mientras se atraviesa una situación que todavía no ha cambiado.",
+      "bible_ref": "Filipenses 4:4-7"
+    },
+    {
+      "id": 8,
+      "question": "Una persona no entiende por qué Dios no ha cambiado todavía una situación difícil. Según el mensaje, ¿qué respuesta refleja mejor la enseñanza?",
+      "options": [
+        "Investigar hasta encontrar una explicación que elimine toda incertidumbre",
+        "Descansar en la gracia y bondad de Dios, orar y seguir confiando en Él",
+        "Concluir que la situación demuestra que su fe no es suficiente",
+        "Buscar constantemente a alguien que conozca la oración exacta para obtener el milagro"
+      ],
+      "correctIndex": 1,
+      "hint": "Recuerda la enseñanza sobre no quedarse atrapado tratando de entender por qué ocurre todo y sobre experimentar la paz de Dios.",
+      "explanation": "La predicación reconoció que hay situaciones que no entendemos. En lugar de hacer de esa incertidumbre el centro de la vida, invitó a descansar en la gracia de Dios, llevarle nuestras necesidades en oración y confiar en su bondad.",
+      "bible_ref": "Filipenses 4:6-7"
+    },
+    {
+      "id": 9,
+      "question": "¿Qué expresa Habacuc cuando decide alegrarse en el Señor aunque falten los frutos y las cosechas?",
+      "options": [
+        "Que las circunstancias materiales ya no tienen ninguna importancia",
+        "Que la fe garantiza que toda pérdida será restaurada inmediatamente",
+        "Que el gozo en Dios puede permanecer aun cuando las circunstancias sean adversas",
+        "Que reconocer el sufrimiento demuestra una falta de confianza en Dios"
+      ],
+      "correctIndex": 2,
+      "hint": "Observa el contraste entre la pérdida de las cosechas y la decisión final del profeta.",
+      "explanation": "Habacuc no negó la realidad de la escasez. Aun describiendo circunstancias difíciles, decidió alegrarse en el Señor y reconocerlo como su fuerza. La predicación utilizó este pasaje para mostrar que el gozo no tiene que depender de que todo salga bien.",
+      "bible_ref": "Habacuc 3:17-19"
+    },
+    {
+      "id": 10,
+      "question": "¿Cuál de estas afirmaciones integra mejor las principales enseñanzas de la predicación?",
+      "options": [
+        "La vida cristiana consiste principalmente en alcanzar una condición perfecta en la que ya no necesitemos depender de Dios",
+        "La fe consiste en negar los diagnósticos y esperar que toda aflicción desaparezca",
+        "El propósito de la sanidad es eliminar todo sufrimiento para que podamos vivir sin depender nuevamente de Dios",
+        "Podemos reconocer nuestras aflicciones sin permitir que nos definan, permanecer en Cristo y vivir sostenidos por su gracia, con esperanza en su obra presente y futura"
+      ],
+      "correctIndex": 3,
+      "hint": "Conecta las enseñanzas sobre permanecer en Cristo, los diagnósticos, la gracia, el gozo y la esperanza final.",
+      "explanation": "El mensaje no presentó una vida sin dificultades como la medida de la fidelidad de Dios. Apuntó a una vida arraigada en Cristo: una vida que puede recibir un milagro de sanidad, pero que también puede ser sostenida por la gracia cuando algo permanece, confiando en que Dios finalmente hará nuevas todas las cosas.",
+      "bible_ref": "Romanos 8:35-39; Apocalipsis 21:3-5"
+    }
+  ],
+  "startPurpose": "Repasa las enseñanzas principales de la predicación y mantén presente el mensaje durante la semana."
+}
