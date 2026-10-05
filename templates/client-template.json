@@ -1,0 +1,14 @@
+{
+  "id": "cliente-001",
+  "slug": "cliente-slug",
+  "name": "Nombre del cliente",
+  "status": "active",
+  "branding": {
+    "displayName": "Nombre que aparecerá en el quiz",
+    "logoUrl": "https://dominio.com/logo.png",
+    "primaryColor": "#2563eb",
+    "accentColor": "#36c98f",
+    "lightBackground": "#f6f8fb",
+    "darkBackground": "#0f141b"
+  }
+}
