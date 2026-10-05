@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/quiz/:client/:year/:month/:slug", "destination": "/index.html" },
+    { "source": "/share/:client/:year/:month/:slug", "destination": "/api/share?client=:client&year=:year&month=:month&slug=:slug" }
+  ]
+}
