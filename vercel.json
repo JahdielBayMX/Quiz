@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/quiz/:path*", "destination": "/index.html" },
-    { "source": "/share/:path*", "destination": "/index.html" }
-  ]
-}
