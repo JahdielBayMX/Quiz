@@ -1,0 +1,197 @@
+{
+  "client": {
+    "id": "cliente-002",
+    "slug": "convivencia-familiar",
+    "name": "Convivencia Familiar"
+  },
+  "period": {
+    "year": 2026,
+    "month": "10-octubre"
+  },
+  "quiz": {
+    "id": "diagnostico-parte-4",
+    "slug": "diagnostico-parte-4",
+    "title": "Diagnóstico Parte 4",
+    "subtitle": "Repasa las enseñanzas principales de la predicación sobre gracia, consuelo y cómo seguir caminando en medio de las dificultades.",
+    "buttons": {
+      "hint": "💡 Ver pista",
+      "next": "Siguiente Pregunta →",
+      "review": "Revisar respuestas",
+      "retry": "Intentar de nuevo",
+      "revive": "Revive el mensaje",
+      "retryReview": "Volver a intentar"
+    },
+    "results": {
+      "title": "¡Lo lograste!",
+      "subtitle": "Completaste el cuestionario satisfactoriamente.",
+      "correctLabel": "Aciertos",
+      "wrongLabel": "Errores",
+      "reviewTitle": "Revisión Detallada"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=GcksRfcBT1A",
+    "startPurpose": "Repasa cómo Dios nos sostiene con su gracia y nos consuela por medio de su Espíritu, su Palabra y el cuerpo de Cristo, para seguir caminando y acompañando a otros."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Según la predicación, ¿qué significa la gracia capacitadora de Dios en medio de las dificultades?",
+      "options": [
+        "Una forma en que Dios reduce sus expectativas cuando sufrimos",
+        "La capacidad de Dios obrando en nosotros para afrontar las circunstancias",
+        "Una promesa de que todo padecimiento terminará inmediatamente",
+        "La ausencia de dificultades mientras permanecemos fieles"
+      ],
+      "correctIndex": 1,
+      "hint": "Recuerda cómo se diferenció la gracia de la lástima y qué hace Dios en nosotros.",
+      "explanation": "La predicación presentó la gracia como la capacidad de Dios obrando en nosotros. Esa gracia nos sostiene y nos capacita para seguir funcionando aun en medio de padecimientos, mientras esperamos la plenitud futura.",
+      "bible_ref": "2 Corintios 12:9"
+    },
+    {
+      "id": 2,
+      "question": "¿A través de qué dos medios destacó la predicación que el Espíritu Santo brinda consuelo a los creyentes?",
+      "options": [
+        "A través de la iglesia y de su Palabra",
+        "A través de la familia y de las circunstancias favorables",
+        "A través de los milagros y de las respuestas inmediatas",
+        "A través del trabajo y de los recursos personales"
+      ],
+      "correctIndex": 0,
+      "hint": "El mensaje presentó dos maneras concretas en las que Dios brinda alivio, apoyo y tranquilidad.",
+      "explanation": "El consuelo no fue presentado solamente como una experiencia interior. La predicación destacó que el Espíritu Santo obra mediante la comunidad de la iglesia y mediante la Palabra de Dios.",
+      "bible_ref": "Juan 14:16-18"
+    },
+    {
+      "id": 3,
+      "question": "Según la enseñanza sobre el cuerpo de Cristo, ¿qué implica pertenecer a la iglesia?",
+      "options": [
+        "Recibir ayuda sin necesidad de involucrarse",
+        "Asistir a las reuniones principalmente para recibir",
+        "Reconocer que necesitamos a otros y buscar nuestra función",
+        "Depender solamente de la familia cuando enfrentamos dificultades"
+      ],
+      "correctIndex": 2,
+      "hint": "Piensa en la comparación de Pablo entre los diferentes miembros de un mismo cuerpo.",
+      "explanation": "La imagen del cuerpo muestra que cada miembro tiene una función y que los miembros se necesitan unos a otros. Por eso, pertenecer a la iglesia implica participar activamente, no solamente ocupar un lugar como visitante.",
+      "bible_ref": "1 Corintios 12:12-21"
+    },
+    {
+      "id": 4,
+      "question": "¿Cómo describió la predicación un consuelo que realmente se expresa dentro de la iglesia?",
+      "options": [
+        "Dando explicaciones sobre por qué Dios permitió el sufrimiento",
+        "Prometiendo que las circunstancias cambiarán pronto",
+        "Evitando hablar del problema para mantener una actitud positiva",
+        "Acompañando, escuchando y proporcionando ayuda concreta cuando sea necesario"
+      ],
+      "correctIndex": 3,
+      "hint": "Recuerda los ejemplos mencionados: dedicar tiempo, escuchar, abrazar, acompañar y también compartir recursos.",
+      "explanation": "Para la predicación, el consuelo cristiano debe hacerse visible. Puede incluir presencia, escucha, silencio, acompañamiento y recursos prácticos; no consiste en encontrar una explicación para cada sufrimiento.",
+      "bible_ref": "Filemón 1:7"
+    },
+    {
+      "id": 5,
+      "question": "¿Qué actitud rechazó especialmente la predicación al acompañar a alguien que está sufriendo?",
+      "options": [
+        "Estar presente aunque no se tengan todas las respuestas",
+        "Usar frases religiosas para explicar rápidamente por qué ocurrió el sufrimiento",
+        "Ayudar con recursos cuando la persona lo necesita",
+        "Llorar con quien está pasando por un momento doloroso"
+      ],
+      "correctIndex": 1,
+      "hint": "Recuerda la advertencia acerca de los amigos de Job y de utilizar la Biblia fuera de contexto.",
+      "explanation": "La predicación advirtió contra las explicaciones fáciles y los clichés religiosos que pueden aumentar el dolor. Acompañar también significa reconocer que no siempre tenemos respuestas y permitir que el Espíritu Santo ministre a la persona.",
+      "bible_ref": "Job 2:11-13"
+    },
+    {
+      "id": 6,
+      "question": "Según la enseñanza sobre Juan 14, ¿cómo se relacionan el amor a Jesús y la obediencia a su Palabra?",
+      "options": [
+        "Primero debemos recibir la sanidad que buscamos y después obedecer",
+        "La obediencia es una manera de responder al amor que Jesús ya nos ha mostrado",
+        "La obediencia solo es necesaria cuando las circunstancias son favorables",
+        "Amar a Jesús significa principalmente experimentar emociones positivas hacia Él"
+      ],
+      "correctIndex": 1,
+      "hint": "Jesús relacionó explícitamente el amor por Él con guardar sus mandamientos.",
+      "explanation": "La predicación presentó la obediencia como una respuesta al amor de Cristo, no como una condición para conseguir que Dios nos ame. Su Palabra expresa quién es Él y, al confiar en ese amor, caminamos conforme a ella.",
+      "bible_ref": "Juan 14:15-18"
+    },
+    {
+      "id": 7,
+      "question": "Una persona atraviesa un diagnóstico difícil y comienza a aislarse de la iglesia porque siente que no puede hacer nada. Según la predicación, ¿qué respuesta refleja mejor la enseñanza?",
+      "options": [
+        "Esperar a sentirse completamente bien antes de volver a participar",
+        "Concentrarse únicamente en recibir ayuda de los demás",
+        "Permanecer vinculada a la iglesia, caminar y seguir sirviendo en la medida posible",
+        "Evitar hablar de la situación para demostrar que mantiene una fe fuerte"
+      ],
+      "correctIndex": 2,
+      "hint": "Recuerda la repetición de una palabra que el predicador utilizó al hablar del foso de desesperación: “camina”.",
+      "explanation": "La predicación animó a no aislarse cuando la vida duele. Caminar significa continuar avanzando en la Palabra y permaneciendo activo en el cuerpo de Cristo, aun cuando todavía no haya llegado el milagro esperado.",
+      "bible_ref": "Salmo 40:1-3"
+    },
+    {
+      "id": 8,
+      "question": "¿Qué quiso enfatizar la predicación con la imagen de “caminar” después de hablar del foso de desesperación?",
+      "options": [
+        "Que debemos ignorar el dolor hasta que desaparezca",
+        "Que debemos avanzar en la vida confiando en Dios y sin aislarnos",
+        "Que debemos resolver nuestros problemas antes de pedir ayuda",
+        "Que la recuperación siempre ocurre rápidamente cuando obedecemos"
+      ],
+      "correctIndex": 1,
+      "hint": "Observa la conexión entre los pies puestos sobre suelo firme, caminar y permanecer involucrados en la iglesia.",
+      "explanation": "Caminar no significa negar el dolor ni afirmar que la recuperación será inmediata. En la predicación representa seguir avanzando con la ayuda de Dios, permaneciendo en su Palabra y en comunidad con otros creyentes.",
+      "bible_ref": "Salmo 40:2-3"
+    },
+    {
+      "id": 9,
+      "question": "¿Qué conexión estableció la predicación entre recibir el consuelo de Dios y consolar a otras personas?",
+      "options": [
+        "El consuelo recibido nos capacita para ofrecer a otros el mismo consuelo",
+        "Solo podemos consolar a otros después de haber superado completamente nuestro sufrimiento",
+        "Consolar a otros significa explicarles por qué Dios permitió sus dificultades",
+        "El consuelo que recibimos debe mantenerse como una experiencia personal"
+      ],
+      "correctIndex": 0,
+      "hint": "Recuerda cómo Pablo describe a Dios como fuente de todo consuelo y relaciona ese consuelo con el cuidado de otros.",
+      "explanation": "El consuelo de Dios no termina en quien lo recibe. Según la predicación, Dios nos consuela en nuestras dificultades para que también podamos acompañar y sostener a otros que atraviesan dificultades.",
+      "bible_ref": "2 Corintios 1:3-7"
+    },
+    {
+      "id": 10,
+      "question": "¿Cuál de estas afirmaciones resume mejor cómo se conectan las principales enseñanzas de la predicación?",
+      "options": [
+        "La vida cristiana consiste principalmente en esperar un milagro, evitando involucrarse hasta que llegue",
+        "El consuelo de Dios elimina necesariamente las dificultades y garantiza que las circunstancias cambien",
+        "La salud divina depende principalmente de la fortaleza personal y de encontrar explicaciones para el sufrimiento",
+        "Dios nos capacita por su gracia, nos consuela por su Espíritu mediante su Palabra y su iglesia, y nos llama a seguir caminando y consolando a otros"
+      ],
+      "correctIndex": 3,
+      "hint": "Reúne las tres líneas que recorrieron todo el mensaje: la gracia que capacita, el consuelo que Dios provee y la manera en que seguimos caminando juntos.",
+      "explanation": "El mensaje no presentó el consuelo como la ausencia de sufrimiento, sino como la provisión de Dios para seguir viviendo y funcionando en medio de él. Su gracia nos capacita, su Palabra nos guía, su Espíritu nos consuela y el cuerpo de Cristo nos acompaña para que también podamos acompañar a otros.",
+      "bible_ref": "2 Corintios 1:3-7"
+    }
+  ],
+  "results": {
+    "scoreMessages": [
+      {
+        "minPercent": 80,
+        "title": "¡Excelente!",
+        "subtitle": "Sigue manteniendo presente lo aprendido durante la semana."
+      },
+      {
+        "minPercent": 50,
+        "title": "¡Muy bien!",
+        "subtitle": "Vuelve a algunas respuestas y sigue conectando con el mensaje."
+      },
+      {
+        "minPercent": 0,
+        "title": "Hay más por recordar",
+        "subtitle": "Vuelve a las enseñanzas y mantén presente el mensaje durante la semana."
+      }
+    ],
+    "shareLabel": "Conecta con el mensaje"
+  },
+  "startPurpose": "Conecta con las enseñanzas principales de la predicación y mantén presente el mensaje durante la semana."
+}
