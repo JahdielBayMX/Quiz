@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Conecta con el mensaje">
+<meta property="og:description" content="Comparte tu resultado y sigue conectado con lo aprendido durante la semana.">
+<meta property="og:image" content="/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conecta con el mensaje">
+<meta name="twitter:description" content="Comparte tu resultado y sigue conectado con lo aprendido durante la semana.">
+<meta name="twitter:image" content="/og-image.png">
+<link rel="stylesheet" href="/styles/quiz.css">
+</head>
+<body>
+<main class="quiz-container-wrapper" id="quiz-main-view">
+  <div id="loading-state" class="loading-state" role="status" aria-live="polite">Cargando quiz…</div>
+  <div id="global-client-brand" class="client-brand global-client-brand" hidden><img id="global-client-logo" class="client-logo" alt=""><span id="global-client-name" class="client-name"></span></div>
+  <section id="start-screen" class="start-card">
+    <div class="quiz-kicker">Repaso de la semana</div>
+    <h1 id="start-title"></h1>
+    <p id="start-subtitle" class="start-subtitle"></p>
+    <p id="start-purpose" class="start-purpose"></p>
+    <div class="start-meta"><span id="question-count"></span></div>
+    <button id="start-btn" class="start-btn" type="button">Comenzar</button>
+  </section>
+
+  <div id="quiz-content" hidden>
+    <header class="quiz-header" id="quiz-header">
+      <div class="quiz-kicker">Repaso de la semana</div>
+      <h1 id="quiz-title"></h1>
+      <p id="quiz-subtitle"></p>
+    </header>
+    <div class="progress-meta"><span id="progress-label"></span></div>
+    <div class="progress-container" id="prog-container"><div id="progress-fill" class="progress-fill"></div></div>
+
+    <section id="quiz-app" aria-live="polite">
+      <div id="question-container">
+        <div id="question-text" class="question-text"></div>
+        <div id="options-group"></div>
+        <div class="actions-area">
+          <button id="hint-btn-step" class="hint-step-btn" type="button"></button>
+          <div id="hint-box-step" class="hint-display-box" role="note"></div>
+        </div>
+        <div id="feedback-area" class="explanation-text" role="status"></div>
+        <button id="next-btn" class="next-btn" type="button"></button>
+      </div>
+    </section>
+
+    <section id="final-summary" class="summary-card" hidden>
+      <h2 id="results-title" class="congrats-title"></h2>
+      <p id="results-subtitle" class="congrats-subtitle"></p>
+      <div class="stats-grid">
+        <div class="stat-item"><span id="correct-label" class="stat-label"></span><span id="stat-correct" class="stat-value correct-value">0</span></div>
+        <div class="stat-item"><span id="wrong-label" class="stat-label"></span><span id="stat-wrong" class="stat-value wrong-value">0</span></div>
+      </div>
+      <div class="score-display" id="stat-percent">0%</div>
+      <div class="final-buttons-container result-actions">
+        <button id="btn-review" class="review-btn-trigger" type="button"></button>
+        <a id="btn-revive" class="review-btn-trigger" target="_blank" rel="noopener noreferrer"></a>
+        <button id="btn-retry" class="reload-btn-final" type="button"></button>
+      </div>
+      <section class="share-result" aria-labelledby="share-title">
+        <h3 id="share-title">Conecta con el mensaje</h3>
+        <p id="share-description">Comparte tu resultado o guarda la imagen para compartirla donde quieras.</p>
+        <div class="share-primary-actions">
+          <button id="btn-share-image" class="share-btn share-native" type="button">Compartir resultado</button>
+          <button id="btn-download-image" class="share-btn" type="button">Descargar imagen</button>
+        </div>
+        <p id="share-status" class="share-status" role="status" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section id="review-screen" hidden>
+      <h2 id="review-title" class="review-title"></h2>
+      <div id="review-list"></div>
+      <div class="final-buttons-container review-actions">
+        <button id="btn-retry-review" class="reload-btn-final" type="button"></button>
+      </div>
+    </section>
+  </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="/engine/quiz-engine.js"></script>
+</body>
+</html>
