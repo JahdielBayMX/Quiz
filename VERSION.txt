@@ -1,2 +1,0 @@
-Quiz Platform V1.0
-Stable master package
