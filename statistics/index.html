@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estadísticas — Quiz Platform</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#18212f;background:#f5f7fa}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:1220px;margin:auto;padding:28px 18px 50px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:24px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#657084}.title{margin:5px 0 4px;font-size:32px}.sub{margin:0;color:#657084}
+.card{background:#fff;border:1px solid #e3e8ef;border-radius:18px;padding:20px;box-shadow:0 5px 20px rgba(20,32,50,.05)}.auth{max-width:480px;margin:12vh auto}
+.label{display:block;font-weight:700;margin-bottom:8px}.input,.select{width:100%;padding:12px 14px;border:1px solid #cbd3df;border-radius:10px;font:inherit;background:#fff}
+.btn{margin-top:12px;border:0;border-radius:10px;padding:12px 16px;font-weight:700;cursor:pointer;background:#1f2937;color:#fff}.refresh{background:#fff;color:#18212f;border:1px solid #cbd3df}.error{margin-top:12px;color:#a61b1b}.hidden{display:none}
+.filters{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}.filters .card{padding:15px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}.metric .k{font-size:13px;color:#657084}.metric .v{font-size:29px;font-weight:800;margin-top:5px}
+.section{margin-top:18px}.section h2{font-size:19px;margin:0 0 12px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:620px}th,td{text-align:left;padding:10px;border-bottom:1px solid #edf0f4;font-size:14px}th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#657084}
+.bars{display:grid;gap:12px}.barrow{display:grid;grid-template-columns:80px 1fr 60px;gap:10px;align-items:center}.track{height:12px;background:#e9edf2;border-radius:99px;overflow:hidden}.fill{height:100%;background:#36c98f}.muted,.status{color:#657084;font-size:13px}.notice{margin-top:10px;padding:10px 12px;border-radius:10px;background:#f0f4f8;color:#526174;font-size:13px}.badge{padding:4px 7px;border-radius:99px;background:#eef2f5;font-size:11px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:repeat(2,1fr)}.top{align-items:start;flex-direction:column}}
+@media(max-width:520px){.wrap{padding:20px 12px}.grid,.filters{grid-template-columns:1fr}.title{font-size:27px}}
+</style>
+</head>
+<body>
+<div id="auth" class="wrap auth"><div class="card">
+<div class="eyebrow">Quiz Platform · Estadísticas</div><h1 class="title">Panel privado</h1><p class="sub">Ingresa la clave para consultar las estadísticas.</p>
+<div style="margin-top:20px"><label class="label" for="key">Clave del panel</label><input id="key" class="input" type="password" autocomplete="current-password" placeholder="Introduce la clave"></div>
+<button id="login" class="btn">Entrar</button><div id="authError" class="error"></div>
+</div></div>
+
+<div id="app" class="wrap hidden">
+<div class="top"><div><div class="eyebrow">Quiz Platform · Estadísticas</div><h1 class="title">Resumen</h1><p class="sub">Actividad agregada de los quizzes registrados.</p></div>
+<div><button id="refresh" class="btn refresh">Actualizar</button><div id="updated" class="status" style="margin-top:7px;text-align:right"></div></div></div>
+
+<section class="filters">
+<div class="card"><label class="label">Cliente</label><select id="client" class="select"><option value="">Todos</option></select></div>
+<div class="card"><label class="label">Quiz</label><select id="quiz" class="select"><option value="">Todos</option></select></div>
+<div class="card"><label class="label">Año</label><select id="year" class="select"><option value="">Todos</option></select></div>
+<div class="card"><label class="label">Mes</label><select id="month" class="select"><option value="">Todos</option></select></div>
+</section>
+
+<div class="grid">
+<div class="card metric"><div class="k">Total de intentos</div><div id="mAttempts" class="v">—</div></div>
+<div class="card metric"><div class="k">Promedio de puntuación</div><div id="mAverage" class="v">—</div></div>
+<div class="card metric"><div class="k">Resultados ≥80%</div><div id="m80" class="v">—</div></div>
+<div class="card metric"><div class="k">Duración promedio</div><div id="mDuration" class="v">—</div></div>
+</div>
+
+<section class="card section"><h2>Distribución de resultados</h2><div id="distribution" class="bars"></div></section>
+<section class="card section"><h2>Rendimiento por quiz</h2><div class="table-wrap"><table><thead><tr><th>Cliente</th><th>Quiz</th><th>Intentos</th><th>Promedio</th><th>≥80%</th></tr></thead><tbody id="quizzes"></tbody></table></div></section>
+<section class="card section"><h2>Rendimiento por pregunta</h2><div class="table-wrap"><table><thead><tr><th>Pregunta</th><th>Respuestas</th><th>Acierto</th><th>Nivel</th></tr></thead><tbody id="questions"></tbody></table></div></section>
+<section class="card section"><h2>Respuestas incorrectas más frecuentes</h2><div class="table-wrap"><table><thead><tr><th>Pregunta</th><th>Respuesta</th><th>Veces</th></tr></thead><tbody id="wrong"></tbody></table></div></section>
+<section class="card section"><h2>Por cliente</h2><div class="table-wrap"><table><thead><tr><th>Cliente</th><th>Intentos</th><th>Promedio</th><th>≥80%</th></tr></thead><tbody id="clients"></tbody></table></div></section>
+<section class="card section"><h2>Por período</h2><div class="table-wrap"><table><thead><tr><th>Cliente</th><th>Período</th><th>Intentos</th><th>Promedio</th><th>≥80%</th></tr></thead><tbody id="periods"></tbody></table></div></section>
+<div class="notice">Los datos son agregados. No se muestran nombres, correos ni teléfonos.</div>
+</div>
+
+<script>
+let key='';
+const $=id=>document.getElementById(id);
+function esc(v){return String(v??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));}
+function pct(v){return `${Number(v||0).toFixed(2).replace(/\.00$/,'')}%`}
+function sec(v){const n=Number(v||0);return `${Math.round(n/60)} min`}
+function params(){const p=new URLSearchParams();['client','quiz','year','month'].forEach(id=>{if($(id).value)p.set(id,$(id).value)});return p.toString()}
+async function load(){
+ $('updated').textContent='Cargando…';
+ const r=await fetch('/api/stats-dashboard'+(params()?`?${params()}`:''),{headers:{'x-stats-dashboard-key':key}});
+ const j=await r.json().catch(()=>({}));
+ if(!r.ok||!j.ok)throw new Error(j.error||`HTTP ${r.status}`);
+ const d=j.data,o=d.overall||{};
+ $('mAttempts').textContent=o.total_attempts??0;$('mAverage').textContent=pct(o.average_percent);$('m80').textContent=pct(o.percent_80_plus);$('mDuration').textContent=sec(o.average_duration_seconds);
+ fill('client',d.clients||[],'client_slug','client_name');fill('quiz',d.quizzes||[],'quiz_slug','quiz_title');
+ fill('year',[...new Set((d.periods||[]).map(x=>({v:String(x.period_year)})))],'v','v');fill('month',[...new Set((d.periods||[]).map(x=>({v:String(x.period_month)})))],'v','v');
+ const dist=d.distribution||[],mx=Math.max(1,...dist.map(x=>Number(x.total_attempts||0)));
+ $('distribution').innerHTML=dist.length?dist.map(x=>`<div class="barrow"><strong>${esc(x.score_range)}%</strong><div class="track"><div class="fill" style="width:${Math.min(100,Number(x.percent_of_attempts||0))}%"></div></div><span>${pct(x.percent_of_attempts)}</span></div>`).join(''):'<span class="muted">Sin datos.</span>';
+ $('quizzes').innerHTML=rows(d.quizzes,['client_name','quiz_title','total_attempts','average_percent','percent_80_plus'],true);
+ $('questions').innerHTML=(d.questions||[]).map(x=>`<tr><td>${esc(x.question_text||x.question_id)}</td><td>${x.total_answers??0}</td><td>${pct(x.percent_correct)}</td><td><span class="badge">${Number(x.percent_correct||0)<60?'Difícil':Number(x.percent_correct||0)<80?'Intermedia':'Fácil'}</span></td></tr>`).join('')||'<tr><td colspan="4">Sin datos.</td></tr>';
+ $('wrong').innerHTML=(d.wrongAnswers||[]).slice(0,20).map(x=>`<tr><td>${esc(x.question_text||x.question_id)}</td><td>${esc(x.selected_answer)}</td><td>${x.total_selected??0}</td></tr>`).join('')||'<tr><td colspan="3">Sin datos.</td></tr>';
+ $('clients').innerHTML=rows(d.clients,['client_name','total_attempts','average_percent','percent_80_plus'],false);
+ $('periods').innerHTML=(d.periods||[]).map(x=>`<tr><td>${esc(x.client_name||x.client_slug)}</td><td>${esc(x.period_year)} · ${esc(x.period_month)}</td><td>${x.total_attempts}</td><td>${pct(x.average_percent)}</td><td>${pct(x.percent_80_plus)}</td></tr>`).join('')||'<tr><td colspan="5">Sin datos.</td></tr>';
+ $('updated').textContent='Actualizado '+new Date().toLocaleTimeString();
+}
+function rows(data,fields,quiz){return (data||[]).map(x=>`<tr>${fields.map((f,i)=>`<td>${i===fields.length-2||i===fields.length-1?pct(x[f]):esc(x[f]??'')}</td>`).join('')}</tr>`).join('')||`<tr><td colspan="${fields.length}">Sin datos.</td></tr>`}
+function fill(id,items,val,label){const e=$(id),old=e.value;e.innerHTML='<option value="">Todos</option>';items.forEach(x=>{const o=document.createElement('option');o.value=x[val];o.textContent=x[label]??x[val];e.appendChild(o)});if([...e.options].some(x=>x.value===old))e.value=old}
+$('login').onclick=async()=>{key=$('key').value.trim();$('authError').textContent='';if(!key){$('authError').textContent='Introduce la clave.';return}try{await load();$('auth').classList.add('hidden');$('app').classList.remove('hidden');localStorage.setItem('statsDashboardKey',key)}catch(e){$('authError').textContent='No fue posible acceder al panel. Verifica la clave.';key=''}};
+$('refresh').onclick=()=>load().catch(()=>alert('No fue posible actualizar las estadísticas.'));
+$('key').addEventListener('keydown',e=>{if(e.key==='Enter')$('login').click()});
+['client','quiz','year','month'].forEach(id=>$(id).addEventListener('change',()=>load().catch(()=>{})));
+const saved=localStorage.getItem('statsDashboardKey');if(saved){$('key').value=saved;key=saved;$('login').click()}
+</script>
+</body></html>
