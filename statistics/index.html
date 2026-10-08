@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Estadísticas</title>
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--text:#17202a;--muted:#68737d;--border:#dce2e7;--accent:#2563eb;--danger:#b42318}
+body.dark{--bg:#0f141b;--card:#171e27;--text:#edf2f7;--muted:#aab5c1;--border:#2b3542;--accent:#60a5fa;--danger:#f97066}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1180px;margin:auto;padding:24px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+h1,h2{margin:0 0 8px}.muted{color:var(--muted)}button,select{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:9px;padding:9px 12px;cursor:pointer}
+button.primary{background:var(--accent);color:white;border-color:var(--accent)}button.danger{color:var(--danger);border-color:var(--danger)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}.big{font-size:28px;font-weight:700}
+.filters{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.filters label{display:flex;flex-direction:column;gap:5px;color:var(--muted);font-size:13px}
+table{width:100%;border-collapse:collapse}.table{overflow:auto}.table td,.table th{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+section{margin-top:18px}.actions{display:flex;gap:8px;flex-wrap:wrap}.admin{border:1px solid var(--border);border-radius:14px;padding:18px;background:var(--card)}
+.notice{padding:12px;border-radius:10px;background:color-mix(in srgb,var(--accent) 12%,var(--card));margin:10px 0}
+@media(max-width:800px){.grid,.filters{grid-template-columns:1fr 1fr}}@media(max-width:520px){main{padding:14px}.grid,.filters{grid-template-columns:1fr}}
+#login{max-width:420px;margin:15vh auto}.hidden{display:none!important}
+</style></head>
+<body>
+<div id="login" class="card">
+<h1>Panel de estadísticas</h1><p class="muted">Acceso privado</p>
+<input id="key" type="password" placeholder="Clave del panel" style="width:100%;padding:11px;border:1px solid var(--border);border-radius:9px;background:var(--card);color:var(--text)">
+<button class="primary" style="margin-top:10px;width:100%" onclick="enter()">Entrar</button>
+<div id="loginErr" class="muted"></div>
+</div>
+<main id="app" class="hidden">
+<div class="top"><div><h1>Estadísticas</h1><div class="muted">Panel multi-cliente</div></div>
+<div class="actions"><button onclick="toggleDark()">◐ Modo oscuro</button><button onclick="load()">Actualizar</button></div></div>
+<div class="notice">Los cortes estadísticos permiten comenzar un nuevo conteo sin borrar el histórico.</div>
+<section class="card"><div class="filters">
+<label>Cliente<select id="client"></select></label><label>Quiz<select id="quiz"></select></label>
+<label>Año<select id="year"></select></label><label>Mes<select id="month"></select></label></div>
+<div class="actions" style="margin-top:12px"><button class="primary" onclick="load()">Aplicar filtros</button>
+<button onclick="csv('quizzes')">Exportar quizzes CSV</button><button onclick="csv('questions')">Exportar preguntas CSV</button></div></section>
+<div id="cards" class="grid"></div>
+<section class="card"><h2>Preguntas</h2><div id="questions" class="table"></div></section>
+<section class="admin"><h2>Administración de cortes</h2><p class="muted">Los cortes son independientes del contenido de los quizzes.</p>
+<div class="filters">
+<label>Cliente<select id="resetClient"></select></label><label>Quiz<select id="resetQuiz"></select></label>
+</div><div class="actions" style="margin-top:12px">
+<button class="danger" onclick="resetQuiz()">Nuevo corte para este quiz</button>
+<button class="danger" onclick="resetClient()">Nuevo corte para este cliente</button>
+<button class="danger" onclick="resetAll()">Nuevo corte global</button></div>
+<div id="adminMsg" class="muted" style="margin-top:10px"></div></section>
+</main>
+<script>
+let KEY=localStorage.getItem('statsKey')||'', DATA=null;
+function enter(){KEY=document.getElementById('key').value;localStorage.setItem('statsKey',KEY);load()}
+function toggleDark(){document.body.classList.toggle('dark');localStorage.setItem('statsDark',document.body.classList.contains('dark')?'1':'0')}
+if(localStorage.getItem('statsDark')==='1')document.body.classList.add('dark');
+async function api(path,opts={}){opts.headers={...(opts.headers||{}),'x-stats-dashboard-key':KEY,'content-type':'application/json'};let r=await fetch(path,opts);let j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw Error(j.error||'Error');return j.data}
+function fill(sel,items,all='Todos'){let e=document.getElementById(sel);e.innerHTML='<option value="">'+all+'</option>'+items.map(x=>`<option value="${x.value??x}">${x.label??x}</option>`).join('')}
+async function load(){try{DATA=await api('/api/stats-dashboard');document.getElementById('login').classList.add('hidden');document.getElementById('app').classList.remove('hidden');
+let clients=[...new Map((DATA.clients||[]).map(x=>[x.client_slug,{value:x.client_slug,label:x.client_name||x.client_slug}])).values()];
+let quizzes=[...new Map((DATA.quizzes||[]).map(x=>[x.quiz_slug,{value:x.quiz_slug,label:x.quiz_title||x.quiz_slug}])).values()];
+fill('client',clients);fill('quiz',quizzes);fill('resetClient',clients);fill('resetQuiz',quizzes);
+render(DATA.questions||[])}catch(e){document.getElementById('loginErr').textContent='No se pudo acceder al panel. Verifica la clave.'}}
+function render(q){let o=DATA.overall||{};document.getElementById('cards').innerHTML=[['Intentos',o.attempts??o.total_attempts??0],['Promedio',((o.avg_percent??o.average_percent??0)+'%')],['Correctas',o.total_correct??0],['Preguntas respondidas',o.total_answers??0]].map(x=>`<div class="card"><div class="muted">${x[0]}</div><div class="big">${x[1]}</div></div>`).join('');
+document.getElementById('questions').innerHTML='<table><thead><tr><th>Quiz</th><th>Pregunta</th><th>Intentos</th><th>% correctas</th></tr></thead><tbody>'+
+q.map(x=>`<tr><td>${x.quiz_title||x.quiz_slug||''}</td><td>${x.question_text||''}</td><td>${x.attempts??x.total_attempts??0}</td><td>${x.percent_correct??x.correct_percent??0}%</td></tr>`).join('')+'</tbody></table>'}
+async function resetQuiz(){let q=document.getElementById('resetQuiz').value;if(!q)return alert('Selecciona un quiz.');if(confirm('¿Crear un nuevo corte para este quiz? El histórico no se borrará.'))await doReset('quiz',q)}
+async function resetClient(){let c=document.getElementById('resetClient').value;if(!c)return alert('Selecciona un cliente.');if(confirm('¿Crear un nuevo corte para este cliente? El histórico no se borrará.'))await doReset('client',c)}
+async function resetAll(){if(confirm('¿Crear un nuevo corte global? El histórico no se borrará.'))await doReset('all','')}
+async function doReset(scope,value){try{let d=await api('/api/stats-reset',{method:'POST',body:JSON.stringify({scope,value})});document.getElementById('adminMsg').textContent='Corte creado: '+d.resetAt;await load()}catch(e){document.getElementById('adminMsg').textContent=e.message}}
+function csv(kind){let rows=kind==='questions'?(DATA.questions||[]):(DATA.quizzes||[]);if(!rows.length)return alert('No hay datos para exportar.');let keys=Object.keys(rows[0]),s=keys.join(',')+'\\n'+rows.map(r=>keys.map(k=>JSON.stringify(r[k]??'')).join(',')).join('\\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv'}));a.download=kind+'-estadisticas.csv';a.click()}
+</script></body></html>
