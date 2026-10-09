@@ -1,0 +1,197 @@
+{
+  "client": {
+    "id": "cliente-003",
+    "slug": "vineyard-church-va",
+    "name": "Vineyard CHurch VA"
+  },
+  "period": {
+    "year": 2026,
+    "month": "10-octubre"
+  },
+  "quiz": {
+    "id": "less-money-stress,-more-trust",
+    "slug": "less-money-stress,-more-trust",
+    "title": "Less Money Stress, More Trust",
+    "subtitle": "Review the main teachings of the sermon about trusting God, managing money wisely, and living generously.",
+    "buttons": {
+      "hint": "💡 Show Hint",
+      "next": "Next Question →",
+      "review": "Review Answers",
+      "retry": "Try Again",
+      "revive": "Revive the Message",
+      "retryReview": "Try Again"
+    },
+    "results": {
+      "title": "You Did It!",
+      "subtitle": "You have successfully completed the quiz.",
+      "correctLabel": "Correct Answers",
+      "wrongLabel": "Incorrect Answers",
+      "reviewTitle": "Detailed Review"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=njo46eFXPjA",
+    "startPurpose": "Review the main teachings of the sermon and keep its message in mind throughout the week."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "According to the sermon, what is the main danger of loving money too much?",
+      "options": [
+        "It can make us stop working toward our goals.",
+        "It can cause us to lose interest in helping others.",
+        "It can lead us to trust money instead of God for our security and peace.",
+        "It can prevent us from enjoying the good things God gives us."
+      ],
+      "correctIndex": 2,
+      "hint": "Think about the warning Jesus gave about serving two masters.",
+      "explanation": "Money can provide for real needs, but it cannot carry the weight of our deepest fears and longings. The danger begins when we expect money to give us the peace, security, and sense of worth that the sermon points us toward finding in God.",
+      "bibleref": "Matthew 6:24"
+    },
+    {
+      "id": 2,
+      "question": "What did George Müller demonstrate when he prayed with the orphans before breakfast, even though there was no food available?",
+      "options": [
+        "He trusted God to provide, even when he could not see how it would happen.",
+        "He believed that careful planning would always prevent difficult situations.",
+        "He expected the children to solve their own needs through hard work.",
+        "He thought that having financial resources was unimportant in every situation."
+      ],
+      "correctIndex": 0,
+      "hint": "Remember what Müller did before the baker and milkman arrived.",
+      "explanation": "Müller faced a real need without knowing how it would be met. His response showed a trust that did not depend on already having everything in place. The story reminds us that faith can shape how we face uncertainty, even when we do not know what will happen next.",
+      "bibleref": "Matthew 6:25-26"
+    },
+    {
+      "id": 3,
+      "question": "What was God teaching the Israelites through the daily provision of manna in the wilderness?",
+      "options": [
+        "They needed to gather extra food whenever they had the opportunity.",
+        "They could become independent once they had enough resources.",
+        "Their physical needs mattered more than their relationship with God.",
+        "They could learn to depend on God's provision one day at a time."
+      ],
+      "correctIndex": 3,
+      "hint": "Consider what happened when the Israelites tried to keep manna until the following morning.",
+      "explanation": "The daily provision was about more than satisfying hunger. According to the sermon, God was also teaching the Israelites to trust His care instead of living as though everything depended on their ability to secure the future themselves.",
+      "bibleref": "Exodus 16:16-21"
+    },
+    {
+      "id": 4,
+      "question": "In Matthew 6, why does Jesus point to the flowers of the field when speaking about worry?",
+      "options": [
+        "To show that people should avoid planning for their future.",
+        "To remind His listeners of God's care for what He has created.",
+        "To teach that material possessions are always harmful.",
+        "To suggest that human needs are less important than nature."
+      ],
+      "correctIndex": 1,
+      "hint": "Remember how Jesus compared the beauty of the flowers with the care God has for His people.",
+      "explanation": "Jesus directs attention away from our attempts to control every outcome and toward the character of the Father who cares for His creation. The sermon uses this passage to invite us to consider whether our financial fears leave enough room for trust in God's care.",
+      "bibleref": "Matthew 6:28-30"
+    },
+    {
+      "id": 5,
+      "question": "According to the sermon, what is the difference between wise preparation and trying to control the future?",
+      "options": [
+        "Wise preparation requires avoiding financial risks, while control requires taking them.",
+        "Wise preparation means saving everything, while control means spending too much.",
+        "Wise preparation uses resources responsibly, while control tries to guarantee that nothing will go wrong.",
+        "Wise preparation depends on personal effort, while control depends entirely on other people."
+      ],
+      "correctIndex": 2,
+      "hint": "Recall how the sermon distinguished budgeting and saving from trying to prevent every possible problem.",
+      "explanation": "The sermon does not condemn planning, saving, or working hard. The difference is what we expect those practices to accomplish: responsible preparation helps us manage what we have, while fear-driven control tries to eliminate the uncertainty that comes with being human.",
+      "bibleref": "Matthew 6:25-27, 34"
+    },
+    {
+      "id": 6,
+      "question": "A person carefully saves money for emergencies but notices that their peace disappears whenever their bank balance decreases. According to the sermon, what would be a helpful next step?",
+      "options": [
+        "Stop saving so that money no longer influences their decisions.",
+        "Build a larger emergency fund before addressing their fears.",
+        "Avoid thinking about finances and focus only on spiritual matters.",
+        "Continue managing money wisely while examining where they place their trust."
+      ],
+      "correctIndex": 3,
+      "hint": "Remember the sermon's distinction between money as a useful gift and money as a substitute for God.",
+      "explanation": "Saving can be a wise way to care for responsibilities, but a bank balance cannot guarantee that life will always feel safe. The invitation is to manage money responsibly while allowing God, rather than financial circumstances, to become the foundation of our peace.",
+      "bibleref": "Matthew 6:31-33"
+    },
+    {
+      "id": 7,
+      "question": "In the sermon, the Israelites created a golden calf while Moses was away on the mountain. What does this story illustrate about fear?",
+      "options": [
+        "Fear can lead people to depend on something they can control instead of trusting God.",
+        "Fear always disappears when people receive enough material resources.",
+        "Fear is proof that people have completely abandoned their faith.",
+        "Fear can be overcome only when leaders provide immediate answers."
+      ],
+      "correctIndex": 0,
+      "hint": "Think about what the people did with their jewelry while they waited for Moses to return.",
+      "explanation": "The Israelites struggled with uncertainty and turned something they could see and handle into an object of worship. The sermon connects this story to our own tendency to grasp for control when we feel afraid, sometimes giving created things a place that belongs to God.",
+      "bibleref": "Exodus 32:1-6"
+    },
+    {
+      "id": 8,
+      "question": "A person wants to grow in trust and notices that they rarely give or share their resources because keeping everything feels safer. According to the sermon, how can generosity help?",
+      "options": [
+        "It guarantees that God will replace everything that is given away.",
+        "It helps loosen the grip of possessions and practice depending on God.",
+        "It proves that financial planning is no longer necessary.",
+        "It makes the amount of money someone owns less important than their reputation."
+      ],
+      "correctIndex": 1,
+      "hint": "Remember the sermon's picture of open hands and its explanation of why generosity matters.",
+      "explanation": "Generosity is more than transferring money to someone else. According to the sermon, it is a spiritual practice that challenges the belief that our security comes only from what we keep and helps us live with greater trust in God.",
+      "bibleref": "Matthew 6:19-21, 24"
+    },
+    {
+      "id": 9,
+      "question": "How does the sermon connect seeking God's kingdom first with becoming a generous person?",
+      "options": [
+        "Seeking God's kingdom means giving away resources before meeting any personal needs.",
+        "Seeking God's kingdom makes financial decisions unnecessary because God will handle everything.",
+        "Seeking God's kingdom shifts our priorities toward God's ways and helps us use our resources with open hands.",
+        "Seeking God's kingdom is mainly about giving a fixed percentage without considering our hearts."
+      ],
+      "correctIndex": 2,
+      "hint": "Think about how the sermon connected Matthew 6:33 with generosity as a way of living, not merely a single action.",
+      "explanation": "When God's kingdom becomes the center of our lives, money no longer determines all our priorities. Giving becomes part of a larger transformation in which we learn to manage what we have faithfully, care for others, and become more like the generous Father we worship.",
+      "bibleref": "Matthew 6:33; Deuteronomy 24:19-22"
+    },
+    {
+      "id": 10,
+      "question": "Which statement best brings together the central message of the sermon?",
+      "options": [
+        "Financial peace comes when we accumulate enough resources to protect ourselves from most difficulties.",
+        "Genuine faith requires rejecting money and avoiding the comforts it can provide.",
+        "Generosity matters primarily because it helps the church meet its financial needs.",
+        "We can work, plan, and enjoy God's gifts while trusting Him as our provider and holding our resources with open hands."
+      ],
+      "correctIndex": 3,
+      "hint": "Bring together the sermon's teachings about God's provision, wise stewardship, seeking His kingdom, and generosity.",
+      "explanation": "The sermon does not ask us to reject money or abandon responsibility. It invites us to put money in its proper place: receive it with gratitude, manage it wisely, and refuse to let it become the source of our identity or security. As our trust in God grows, generosity becomes a natural expression of living under His care.",
+      "bibleref": "Matthew 6:24-34; Matthew 6:33"
+    }
+  ],
+  "results": {
+    "scoreMessages": [
+      {
+        "minPercent": 80,
+        "title": "Excellent!",
+        "subtitle": "Keep the message in mind and put what you have learned into practice throughout the week."
+      },
+      {
+        "minPercent": 50,
+        "title": "Well Done!",
+        "subtitle": "Review a few of your answers and keep connecting with the message."
+      },
+      {
+        "minPercent": 0,
+        "title": "There Is More to Remember",
+        "subtitle": "Revisit the teachings and keep the message in mind throughout the week."
+      }
+    ],
+    "shareLabel": "Connect with the Message"
+  },
+  "startPurpose": "Connect with the main teachings of the sermon and keep its message in mind throughout the week."
+}
