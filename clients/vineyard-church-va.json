@@ -1,0 +1,14 @@
+{
+  "id": "cliente-003",
+  "slug": "vineyard-church-va",
+  "name": "Vineyard Church",
+  "status": "active",
+  "branding": {
+    "displayName": "Vineyard Church",
+    "logoUrl": "https://share.google/9rleog5urQmHvBF9a",
+    "primaryColor": "#222222",
+    "accentColor": "#FFFFFF",
+    "lightBackground": "#f6f8fb",
+    "darkBackground": "#0f141b"
+  }
+}
