@@ -1,0 +1,17 @@
+FASE 9 — SISTEMA DE IDIOMAS
+
+- Idiomas soportados para el quiz: español (es) e inglés (en).
+- El panel privado /statistics/ permanece en español.
+- Cada quiz define su idioma con la propiedad superior "language".
+- Si se omite "language", el quiz usa español por defecto.
+- Los textos fijos de la interfaz del quiz se cargan desde /i18n/es.json o /i18n/en.json.
+- Los textos propios del contenido (title, subtitle, preguntas, opciones, explicaciones, scoreMessages, etc.) siguen viviendo en el JSON del quiz y deben estar escritos en el idioma elegido.
+- Los botones y etiquetas del JSON pueden personalizarse; si se omiten, se usan los textos del idioma seleccionado.
+- La tarjeta PNG, mensajes de compartir, revisión y mensajes de error usan el idioma seleccionado.
+
+NUEVO FLUJO
+1. Crear o copiar el JSON del quiz.
+2. Agregar "language": "en" para un quiz en inglés, o "language": "es" para español.
+3. Traducir el contenido propio del JSON.
+4. No modificar engine/quiz-engine.js para traducir un quiz.
+5. Validar, probar y publicar normalmente.
