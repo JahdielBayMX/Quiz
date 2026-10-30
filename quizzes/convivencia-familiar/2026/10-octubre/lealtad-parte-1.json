@@ -1,0 +1,203 @@
+
+{
+  "client": {
+    "id": "cliente-002",
+    "slug": "convivencia-familiar",
+    "name": "Convivencia Familiar"
+  },
+  "period": {
+    "year": 2026,
+    "month": "10-octubre"
+  },
+  "quiz": {
+    "id": "lealtad-parte-1",
+    "slug": "lealtad-parte-1",
+    "title": "Lealtad",
+    "subtitle": "Descubre qué significa ser amigo de Dios, cómo se desarrolla la lealtad en nuestro corazón y cómo se expresa a través de una vida que refleja el carácter de Jesucristo.",
+    "pastor": "Luis Ortiz",
+    "series": "Lealtad",
+    "seriesPart": 1,
+    "church": "Convivencia Familiar",
+    "date": "2026-10-25",
+    "buttons": {
+      "hint": "💡 Ver pista",
+      "next": "Siguiente Pregunta →",
+      "review": "Revisar respuestas",
+      "retry": "Intentar de nuevo",
+      "revive": "Revive el mensaje",
+      "retryReview": "Volver a intentar"
+    },
+    "results": {
+      "title": "¡Lo lograste!",
+      "subtitle": "Completaste el cuestionario satisfactoriamente.",
+      "correctLabel": "Aciertos",
+      "wrongLabel": "Errores",
+      "reviewTitle": "Revisión Detallada"
+    },
+    "videoUrl": "https://www.youtube.com/watch?v=kwTzELnaPrw",
+    "startPurpose": "Repasa cómo Dios desea formar amigos leales, cómo su carácter transforma nuestro corazón y cómo esa lealtad se expresa mediante la obediencia, la misericordia, el amor y la perseverancia."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "question": "Según el sermón, ¿qué cualidad clave desea desarrollar Dios en quienes llama sus amigos?",
+      "options": [
+        "El conocimiento de las enseñanzas y doctrinas bíblicas",
+        "La lealtad que crece de un corazón rendido a Dios",
+        "La disciplina religiosa y el servicio constante",
+        "La confianza en que Dios cumplirá cada promesa de inmediato"
+      ],
+      "correctIndex": 1,
+      "hint": "Piensa en la cualidad que el predicador identificó como el elemento común entre las personas descritas en Hebreos 11.",
+      "explanation": "El sermón enfatizó que la amistad con Dios va más allá de conocer las Escrituras, servir en el ministerio o seguir prácticas religiosas. Dios desea un corazón que permanezca comprometido con Él, y esa lealtad crece a medida que nos rendimos a su obra en nuestra vida.",
+      "bible_ref": "Hebreos 11:32-40"
+    },
+    {
+      "id": 2,
+      "question": "¿Qué diferencia estableció el sermón entre ser usado por Dios y ser amigo de Dios?",
+      "options": [
+        "Ser usado por Dios requiere más esfuerzo que ser su amigo",
+        "Ser amigo de Dios significa recibir más bendiciones que los demás",
+        "Ser usado por Dios depende de conocer más las Escrituras que los demás",
+        "Ser usado por Dios implica participar en sus obras, mientras que la amistad implica compartir su vida"
+      ],
+      "correctIndex": 3,
+      "hint": "Recuerda la comparación del predicador entre participar en las obras de Dios y compartir algo mucho más personal con Él.",
+      "explanation": "Según el mensaje, Dios puede usar a muchas personas e incluso cosas para cumplir sus propósitos. Sin embargo, la amistad va más allá de ser útiles para Dios; implica una relación creciente en la que aprendemos a conocer su corazón y caminamos con Él.",
+      "bible_ref": "Juan 15:14-15"
+    },
+    {
+      "id": 3,
+      "question": "En Hebreos 11, ¿qué aprendemos de las personas que permanecieron fieles aunque no recibieron lo prometido durante su vida?",
+      "options": [
+        "La fidelidad puede mantenerse aun cuando las promesas de Dios no se cumplen de inmediato",
+        "La fidelidad garantiza que cada promesa se cumplirá antes de morir",
+        "La fidelidad vale la pena únicamente cuando produce resultados visibles",
+        "La fidelidad significa que el sufrimiento nunca debe afectar nuestras emociones"
+      ],
+      "correctIndex": 0,
+      "hint": "Considera el contraste de Hebreos 11 entre quienes experimentaron liberaciones extraordinarias y quienes sufrieron sin recibir lo prometido.",
+      "explanation": "Hebreos 11 describe a personas que confiaron en Dios tanto en victorias extraordinarias como en experiencias dolorosas. El sermón utilizó su ejemplo para cuestionar la idea de que la fe siempre debe producir una recompensa inmediata. Caminar con Dios sigue teniendo sentido aun cuando debemos esperar.",
+      "bible_ref": "Hebreos 11:35-40"
+    },
+    {
+      "id": 4,
+      "question": "En Juan 15:9-10, Jesús relaciona permanecer en su amor con obedecer sus mandamientos. ¿Cómo explicó el sermón esta relación?",
+      "options": [
+        "La obediencia merece el amor de Dios cuando nuestro desempeño es suficientemente bueno",
+        "La obediencia consiste en seguir reglas religiosas sin cometer errores",
+        "La obediencia expresa lealtad dentro de una relación basada en el amor de Cristo",
+        "La obediencia importa únicamente cuando comprendemos plenamente los propósitos de Dios"
+      ],
+      "correctIndex": 2,
+      "hint": "Recuerda cómo el predicador explicó la relación entre el amor, la obediencia y la imposibilidad de alcanzar la perfección mediante el desempeño religioso.",
+      "explanation": "El sermón presentó la obediencia como una expresión de lealtad, no como una manera de ganarnos el amor de Dios mediante un desempeño perfecto. Permanecemos en el amor de Cristo mientras procuramos seguirlo, incluso cuando obedecer resulta difícil y necesitamos su ayuda.",
+      "bible_ref": "Juan 15:9-10"
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál fue la enseñanza principal del ejemplo del buen samaritano en el sermón?",
+      "options": [
+        "La verdadera lealtad significa ayudar únicamente a quienes comparten nuestros valores",
+        "La verdadera lealtad significa mostrar el cuidado de Cristo, incluso cuando no esperamos recibir nada a cambio",
+        "La verdadera lealtad significa corregir a las personas antes de atender sus necesidades",
+        "La verdadera lealtad significa ayudar solo cuando podemos garantizar un buen resultado"
+      ],
+      "correctIndex": 1,
+      "hint": "Piensa en el desconocido herido, en las personas que pasaron de largo y en quien inesperadamente se detuvo para ayudarlo.",
+      "explanation": "El predicador destacó la disposición del samaritano para cuidar a una persona vulnerable, aunque esta no pudiera devolverle el favor. Este ejemplo mostró que la lealtad al carácter de Dios se expresa mediante la misericordia y la bondad práctica, no simplemente defendiendo nuestros principios o juzgando a los demás.",
+      "bible_ref": "Lucas 10:30-37"
+    },
+    {
+      "id": 6,
+      "question": "Una persona dice: «Estoy siendo leal a mí misma, por eso me niego a cambiar mi comportamiento». Según el sermón, ¿qué debería ayudarle a evaluar esa actitud?",
+      "options": [
+        "Si puede defender su comportamiento con argumentos sólidos",
+        "Si ha sido consistente con las decisiones que tomó en el pasado",
+        "Si otros cristianos están de acuerdo con su punto de vista",
+        "Si su comportamiento refleja el carácter de Jesús"
+      ],
+      "correctIndex": 3,
+      "hint": "Recuerda el contraste que hizo el predicador entre la verdadera lealtad y la terquedad, especialmente cuando nuestras convicciones personales son confrontadas por la Palabra de Dios.",
+      "explanation": "El sermón advirtió que llamarnos leales no significa que nuestro comportamiento sea necesariamente correcto. La verdadera lealtad debe ser moldeada por el carácter de Dios y el ejemplo de Jesús, ayudándonos a reconocer en qué necesitamos cambiar en lugar de limitarnos a defender nuestra propia posición.",
+      "bible_ref": "Romanos 8:29"
+    },
+    {
+      "id": 7,
+      "question": "Un cristiano está luchando por obedecer a Dios en una situación difícil y se siente desanimado por sus repetidos fracasos. ¿Qué respuesta refleja mejor la enseñanza del sermón?",
+      "options": [
+        "Acercarse sinceramente a Dios, pedir su ayuda y continuar creciendo en lealtad",
+        "Esperar a que termine la lucha antes de volver a acercarse a Dios",
+        "Concentrarse en mejorar sus hábitos religiosos antes de pedir ayuda a Dios",
+        "Suponer que la lucha demuestra que su relación con Dios ha terminado"
+      ],
+      "correctIndex": 0,
+      "hint": "Recuerda lo que el predicador describió cuando obedecer le resultaba difícil y necesitaba sabiduría, fortaleza y apoyo.",
+      "explanation": "El sermón reconoció que los creyentes enfrentan luchas reales y no alcanzan la perfección de un día para otro. En lugar de escondernos de Dios, podemos acercarnos a Él con sinceridad, pedir fortaleza y buscar el apoyo que nos ayude a seguir caminando fielmente.",
+      "bible_ref": "Hebreos 4:16"
+    },
+    {
+      "id": 8,
+      "question": "El sermón relacionó la lealtad a Dios con el gozo. ¿Qué le ayudó a reconocer al predicador su experiencia de aferrarse al enojo?",
+      "options": [
+        "El gozo llega cuando demostramos que nuestras razones para enojarnos son correctas",
+        "El gozo depende de evitar a las personas que no están de acuerdo con nosotros",
+        "Tener la razón no significa necesariamente experimentar el gozo que Cristo desea para nosotros",
+        "El gozo requiere fingir que las situaciones dolorosas nunca sucedieron"
+      ],
+      "correctIndex": 2,
+      "hint": "Recuerda la pregunta que enfrentó el predicador cuando reconoció que tenía argumentos sólidos para justificar su enojo, pero seguía sintiendo amargura.",
+      "explanation": "El predicador descubrió que defender su postura no lo liberaba de la amargura. El sermón relacionó la lealtad a Cristo con aprender a amar a los demás como Jesús nos ha amado, recordándonos que ganar una discusión y experimentar el gozo de Cristo no son lo mismo.",
+      "bible_ref": "Juan 15:9-11"
+    },
+    {
+      "id": 9,
+      "question": "¿Cómo ilustra la respuesta de Jesús a Pedro después de que este lo negó la enseñanza del sermón sobre la lealtad?",
+      "options": [
+        "Jesús esperó a que Pedro demostrara que nunca volvería a fallar antes de restaurarlo",
+        "Jesús le ofreció a Pedro la oportunidad de continuar su relación a pesar de su fracaso",
+        "Jesús demostró que negar al Señor no tiene importancia en la vida de un creyente",
+        "Jesús reemplazó su relación con Pedro por una serie de requisitos religiosos"
+      ],
+      "correctIndex": 1,
+      "hint": "Piensa en la conversación en la que Jesús resucitado le preguntó a Pedro si lo amaba y le dio la oportunidad de responder.",
+      "explanation": "La negación de Pedro fue un fracaso real, pero no tenía que ser el final de su relación con Jesús. El sermón enfatizó la fidelidad de Cristo hacia Pedro y la invitación a continuar caminando juntos. Esto ilustra que la lealtad no significa perfección, sino una relación en la que el amor, la restauración y el crecimiento continuo son importantes.",
+      "bible_ref": "Juan 21:15-19"
+    },
+    {
+      "id": 10,
+      "question": "¿Qué afirmación reúne mejor el mensaje central del sermón acerca de llegar a ser amigos de Dios?",
+      "options": [
+        "Nos convertimos en amigos de Dios al dominar las Escrituras, mantener una disciplina estricta y evitar los errores",
+        "Nos convertimos en amigos de Dios al esperar sus bendiciones y demostrar que nuestra fe produce éxito",
+        "Nos convertimos en amigos de Dios al servir a sus propósitos, defender nuestras convicciones y demostrar nuestro valor mediante la obediencia",
+        "Crecemos como amigos de Dios mediante un corazón rendido a Cristo, aprendiendo su carácter y expresando nuestra lealtad a través de una obediencia amorosa"
+      ],
+      "correctIndex": 3,
+      "hint": "Reúne las ideas principales del sermón: la lealtad, la amistad con Dios, el carácter de Jesús y la diferencia entre el desempeño religioso y un corazón rendido.",
+      "explanation": "El corazón del mensaje es que Dios desea más que personas que conozcan enseñanzas religiosas o participen en su obra. Él nos invita a una amistad en la que su amor transforma nuestro carácter y nuestra lealtad se hace visible mediante la obediencia, la misericordia, la perseverancia y el amor. No nos ganamos esta relación mediante la perfección; crecemos en ella al rendirnos a Cristo y aprender a reflejar su corazón.",
+      "bible_ref": "Juan 15:12-15"
+    }
+  ],
+  "results": {
+    "scoreMessages": [
+      {
+        "minPercent": 80,
+        "title": "¡Excelente!",
+        "subtitle": "Sigue creciendo en lealtad a Dios y reflejando el carácter de Jesucristo en tu vida."
+      },
+      {
+        "minPercent": 50,
+        "title": "¡Muy bien!",
+        "subtitle": "Vuelve a algunas respuestas y sigue profundizando en lo que significa ser amigo de Dios."
+      },
+      {
+        "minPercent": 0,
+        "title": "Hay más por descubrir",
+        "subtitle": "Repasa las enseñanzas y recuerda que la lealtad a Dios es un camino de crecimiento y rendición."
+      }
+    ],
+    "shareLabel": "Conecta con el mensaje"
+  },
+  "startPurpose": "Conecta con las enseñanzas principales de la serie Lealtad y descubre cómo crecer en amistad con Dios, reflejando el carácter de Jesús en tu vida diaria."
+}
